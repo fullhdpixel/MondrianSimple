@@ -1,5 +1,5 @@
 import {Dimensions} from 'react-native'
-
+import Colors from '../Themes/Colors'
 import styled from 'styled-components'
 
 const {width} = Dimensions.get('window')
@@ -8,13 +8,14 @@ const borderWidth = 12;
 export const Container = styled.View `
   justifyContent: center;
   height: 100%;
+  backgroundColor: ${Colors.background};
 `
 
 export const Mondrian = styled.View `
   width: ${width - 20}px;
   height: ${width - 20}px;
   display: flex;
-  margin: 12px;
+  margin: 10px;
   borderWidth: ${borderWidth}px;
 `
 
@@ -34,7 +35,7 @@ export const TopLeft = styled.View `
 
 export const TopRight = styled.View `
   flex: 2.9;
-  backgroundColor: red;
+  backgroundColor: ${Colors.red};
 `
 
 export const TopLeftTop = styled.View `
@@ -56,7 +57,7 @@ export const Bottom = styled.View `
 
 export const BottomLeft = styled.View `
   flex: 1;
-  backgroundColor: blue;
+  backgroundColor: ${Colors.blue};
 
   borderRightWidth: ${borderWidth}px;
 `
@@ -86,7 +87,7 @@ export const BottomRightTop = styled.View `
 
 export const BottomRightBottom = styled.View `
   flex: 1;
-  backgroundColor: yellow;
+  backgroundColor: ${Colors.yellow};
 
   borderTopWidth: ${borderWidth}px;
 `
