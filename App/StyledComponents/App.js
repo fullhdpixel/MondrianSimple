@@ -58,13 +58,12 @@ export const Bottom = styled.View `
 export const BottomLeft = styled.View `
   flex: 1;
   backgroundColor: ${Colors.blue};
-
-  borderRightWidth: ${borderWidth}px;
 `
 
 export const BottomRight = styled.View `
-  flex: 3;
+  flex: 2.9;
   
+  borderLeftWidth: ${borderWidth}px;
   display: flex;
   flexDirection: row;
 `
